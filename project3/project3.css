@@ -10,7 +10,7 @@ video {
 
 .description {
     position: absolute;
-    top: 68%;
+    top: 65%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -84,7 +84,7 @@ video {
     }
     video {
         width: 80%; /* Adjust the width for smaller screens */
-        margin-top: 160px; /* Adjust the top margin */
+        margin-top: 100px; /* Adjust the top margin */
         margin-left: 11.5%;
     }
 }
