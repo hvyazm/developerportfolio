@@ -1,0 +1,101 @@
+body {
+    background-color: rgb(55, 56, 54);
+}
+video {
+    width: 42%; /* Adjust this value to make the video smaller */
+    height: auto;
+    display: block;
+    margin: 140px auto 0; /* Adjust the top margin to lower the video */
+}
+
+.description {
+    position: absolute;
+    top: 68%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff;
+    z-index: 1;
+    font-family: 'Avenir Next', sans-serif;
+}
+
+.description h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+
+.description h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: 200;
+}
+
+.description p {
+    font-size: 18px;
+}
+
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1; /* Ensure the button is on top of the video */
+    display: inline-block;
+    padding: 10px 20px;
+    color: #ffffff;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Avenir Next', sans-serif;
+}
+
+.back-button:hover {
+    background-color: #ff007b;
+}
+
+.photos {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 70%; /* Adjust the width as needed */
+}
+
+.photos img {
+    max-width: 100%; /* Adjust the width as needed */
+    height: auto;
+    margin: 0 auto; /* Center the images horizontally */
+    padding: 2rem 0; /* Add vertical padding */
+
+}
+
+.photos img:nth-child(2) {
+    border: 1px solid #ffffff; /* Add a 5px white border */
+    box-sizing: border-box; /* Include the border in the element's total width and height */
+}
+
+
+@media screen and (max-width: 768px) {
+    .description, .photos {
+        width: 90%; /* Adjust for smaller screens */
+    }
+    video {
+        width: 80%; /* Adjust the width for smaller screens */
+        margin-top: 160px; /* Adjust the top margin */
+        margin-left: 11.5%;
+    }
+}
+
+.description2 {
+    position: absolute;
+    padding-top: 20rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-family: 'Avenir Next', sans-serif;
+    font-size: 14px;
+    padding-bottom: 10rem;
+}
