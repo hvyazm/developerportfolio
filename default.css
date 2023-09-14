@@ -4,6 +4,20 @@ body, h1, h2, h3, p, ul, li {
   padding: 0;
 }
 
+.fade-in {
+  opacity: 0;
+  animation: fadeInAnimation 1.5s ease-in forwards;
+}
+
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 header {
   display: flex;
   justify-content: space-between;
