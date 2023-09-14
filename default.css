@@ -61,20 +61,85 @@ header {
 .navbar {
   display: flex;
   align-items: center;
+  flex-direction: row; /* Ensure it's horizontal */
 }
 
-.navbar li {
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Add this to make the list items horizontal */
+}
+
+.nav-list li {
   margin: 0 1rem;
 }
 
-.navbar a {
+.nav-list a {
   text-decoration: none;
   color: rgb(0, 0, 0);
 }
 
-.navbar a:hover {
-  color: #ff078f; 
+.nav-list a:hover {
+  color: #ff078f;
 }
+/* Your existing CSS */
+
+/* Your existing CSS */
+
+@media screen and (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+  }
+
+  .menu-toggle .bar {
+    display: block;
+    height: 3px;
+    width: 25px;
+    margin: 5px auto;
+    background-color: #000;
+    transition: 0.4s;
+  }
+
+  .menu-toggle.active .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .menu-toggle.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-toggle.active .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+
+  .nav-list.active {
+    display: flex;
+  }
+
+  .nav-list li {
+    margin: 0;
+  }
+
+  .nav-list a {
+    display: block;
+    padding: 1rem;
+    color: rgb(0, 0, 0);
+  }
+
+  .nav-list a:hover {
+    color: #ff078f;
+  }
+}
+
 
 .projects-content {
   width: 100%;
