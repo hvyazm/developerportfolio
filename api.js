@@ -1,5 +1,3 @@
-import R from "./ramda.js";
-
 // Select the "About" link
 const aboutLink = document.querySelector('a[href="#about"]');
 
@@ -17,11 +15,10 @@ aboutLink.addEventListener('click', (event) => {
     });
 });
 
-const menu = document.querySelector("#menu-toggle");
-const ul = document.querySelector("nav ul");
-const nav = document.querySelector("nav");
-
-menu.addEventListener("click", () => {
-    ul.classList.toggle("show");
+$(document).ready(function(){
+    $("#mobile-menu").click(function(){
+      $("#navbar .nav-list").toggleClass("active");
+      $("#mobile-menu").toggleClass("active");
+    });
   });
-  const navLink = document.querySelectorAll(".nav-link");
+  
